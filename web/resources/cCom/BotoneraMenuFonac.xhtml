@@ -1,0 +1,23 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:cc="http://java.sun.com/jsf/composite"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+    <!-- INTERFACE -->
+    <cc:interface>
+        <cc:attribute name="managedBean" />
+    </cc:interface>
+
+    <!-- IMPLEMENTATION -->
+    <cc:implementation>
+        <h:form>
+            <h:panelGrid columns="1">
+                <h:commandButton value="#{cc.attrs.managedBean.menu1}" />
+                <h:commandButton value="#{cc.attrs.managedBean.menu2}" />
+                <h:commandButton value="#{cc.attrs.managedBean.menu3}" />
+                <h:commandButton value="#{cc.attrs.managedBean.menu4}" />
+                <h:commandButton value="#{cc.attrs.managedBean.menu5}" />
+                <h:commandButton value="#{cc.attrs.managedBean.menu6}" action="Login" />
+            </h:panelGrid>
+        </h:form>
+    </cc:implementation>
+</html>

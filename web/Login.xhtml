@@ -1,0 +1,26 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:cCom="http://java.sun.com/jsf/composite/cCom">
+
+    <body>
+
+        <ui:composition template="./templates/LoginTemplate.xhtml">
+
+            <ui:define name="top">
+                <h1>Sistema Fondo de Ahorro Capitalizable</h1>
+            </ui:define>
+
+            <ui:define name="content">
+                Bienvenido.
+                <cCom:formLogin managedBean="#{loginBean}"/>
+                
+            </ui:define>
+
+            <ui:define name="bottom">
+                Zazil Consultores S.A. de C.V.
+            </ui:define>
+
+        </ui:composition>
+
+    </body>
+</html>

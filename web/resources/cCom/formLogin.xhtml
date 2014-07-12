@@ -1,0 +1,25 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:cc="http://java.sun.com/jsf/composite"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+    <!-- INTERFACE -->
+    <cc:interface>
+        <cc:attribute name="managedBean" />
+    </cc:interface>
+
+    <!-- IMPLEMENTATION -->
+    <cc:implementation>
+        <h:form>
+            <h:panelGrid columns="3">
+                <h:outputLabel for="nombreUsuario" value="Usuario"/>
+                <h:inputText id="nombreUsuario" value="#{cc.attrs.managedBean.usuario}" />
+                <h:message for="nombreUsuario" />
+                
+                <h:outputLabel for="passwordUsuario" value="Password" />
+                <h:inputSecret id="passwordUsuario" value="#{cc.attrs.managedBean.password}" />
+                <h:message for="passwordUsuario" />
+            </h:panelGrid>
+            <h:commandButton value="Ingresar" action="MenuFonac"/>
+        </h:form>
+    </cc:implementation>
+</html>
